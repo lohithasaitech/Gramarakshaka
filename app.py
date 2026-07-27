@@ -187,8 +187,8 @@ UI_TEMPLATE = """<!DOCTYPE html>
 
         const { useState, useEffect, useRef } = React;
         
-        const gemini_token = "API_TOKEN";
-        const ai_models = ["gemini-3.1-pro", "gemini-3-flash", "gemini-3.1-flash-lite", "gemini-2.5-flash", "gemini-1.5-flash"];
+        const auth_token = "API_TOKEN";
+        const ai_models = ["ENTER_MODEL_NAME"];
 
         function GramRakshakApp() {
             const [user, setUser] = useState(null);
