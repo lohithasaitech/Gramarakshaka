@@ -304,7 +304,7 @@ UI_TEMPLATE = """<!DOCTYPE html>
 
                 for (const model of ai_models) {
                     try {
-                        const ai_req = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${gemini_token}`, {
+                        const ai_req = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${auth_token}`, {
                             method: 'POST', headers: { 'Content-Type': 'application/json' },
                             body: JSON.stringify({ contents: [{ parts: [{ text: sys_prompt }] }] })
                         });
